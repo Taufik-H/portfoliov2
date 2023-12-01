@@ -27,6 +27,13 @@
 .btn_dark {
   @apply text-white cursor-pointer shadow-xl bg-slate-900 rounded-full px-7 text-sm  py-4  font-semibold;
 }
+.bgProjects {
+  background-image: url("/bgproject.svg");
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @layer base {
   :root {
