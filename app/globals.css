@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* count animation */
+.count-up {
+  animation: countUpAnimation 1s ease-out;
+}
+
+@keyframes countUpAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .max-container {
   @apply mx-auto max-w-[1440px];
 }

@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Button from "./Button";
 import PageTitle from "./PageTitle";
 import CardJob from "./CardJob";
 import Image from "next/image";
+import CountUp from "react-countup";
 
 const Services = () => {
   return (
@@ -56,11 +58,15 @@ const Services = () => {
 
             <div className="rounded-xl w-full gap-5 lg:w-fit flex justify-around p-3">
               <div className="flexCenter flex-col items-center">
-                <h3 className="text-2xl font-bold text-slate-900">100+</h3>
+                <h3 className="text-2xl font-bold text-slate-900">
+                  <CountUp end={100} duration={2} />+
+                </h3>
                 <p className="text-xs text-slate-600">Project completed</p>
               </div>
               <div className="flexCenter flex-col items-center">
-                <h3 className="text-2xl font-bold text-slate-900">70+</h3>
+                <h3 className="text-2xl font-bold text-slate-900">
+                  <CountUp end={70} duration={2} />+
+                </h3>
                 <p className="text-xs text-slate-600">Positive Feedback</p>
               </div>
             </div>
