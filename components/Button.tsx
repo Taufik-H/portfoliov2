@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 type ButtonProps = {
   href: string;
@@ -10,8 +11,7 @@ type ButtonProps = {
 
 const Button = ({ href, title, icon, variant, className }: ButtonProps) => {
   return (
-    <a
-      target="_blank"
+    <Link
       href={href}
       className={`flexCenter items-center gap-3 ${className}  ${variant}`}
     >
@@ -19,7 +19,7 @@ const Button = ({ href, title, icon, variant, className }: ButtonProps) => {
         {title}
       </label>
       {icon && <Image src={icon} alt={title} width={20} height={20} />}
-    </a>
+    </Link>
   );
 };
 
