@@ -6,7 +6,6 @@ type CardProjectProps = {
   image: string;
   title: string;
   href: string;
-
   alt: string;
 };
 const CardProject = ({ image, title, alt, href }: CardProjectProps) => {
