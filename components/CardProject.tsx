@@ -5,26 +5,25 @@ import Button from "./Button";
 type CardProjectProps = {
   image: string;
   title: string;
-  desc: string;
-  icon: string;
+
+  alt: string;
 };
-const CardProject = ({ image, title, desc, icon }: CardProjectProps) => {
+const CardProject = ({ image, title, alt }: CardProjectProps) => {
   return (
     <div className="my-10">
       <Image
         src={image}
         width={394}
         height={394}
-        className="rounded-2xl shadow-lg shadow-slate-400"
-        alt="raimu"
+        className="rounded-2xl shadow-lg shadow-gray-300  w-full h-52 object-cover"
+        alt={alt}
       />
-      <p className="font-bold mt-5">{title}</p>
-      <p className="mb-5 text-slate-700">{desc}</p>
+      <p className="font-bold my-5 ">{title}</p>
       <Button
         title="Demo Website"
         type="button"
         variant={"btn_dark"}
-        icon={icon}
+        icon="/eye.svg"
       />
     </div>
   );
