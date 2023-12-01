@@ -1,44 +1,26 @@
 "use client";
 
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Contact = () => {
-  const [inputValue, setInputValue] = useState("");
-
-  const handleInputChange = (e: any) => {
-    setInputValue(e.target.value);
-  };
-
-  const handleButtonClick = () => {
-    console.log("Input Value:", inputValue);
-    // Add additional functionality, such as sending the input value to a server or performing other actions.
-  };
-
   return (
     <section className="max-container padding-container">
-      <div className="bg-blue-500 rounded-lg w-full p-3 text-center flex flex-center items-center flex-col">
-        <p className="uppercase text-white text-xs font-bold">Let's Discuss</p>
-
-        <p className="text-3xl md:w-6/12 text-center font-black text-white mt-10">
-          Feel free to talk about something that you are interested in
+      <div className="bg-gradient-to-tr from-blue-700 to-blue-400 rounded-2xl w-full p-3 text-center flex py-20 flex-center items-center flex-col">
+        <p className="uppercase text-white text-xs font-bold border-b border-white">
+          Let's Discuss
         </p>
 
-        <div className="mt-6">
-          <input
-            type="text"
-            placeholder="Your Message"
-            className="border-2 border-white p-2 rounded-md"
-            value={inputValue}
-            onChange={handleInputChange}
-          />
-        </div>
+        <p className="text-3xl md:w-6/12 text-center font-black text-white my-10">
+          Feel free to talk about something that you are interested with
+        </p>
 
-        <button
-          className="mt-4 bg-white text-blue-500 py-2 px-6 rounded-full"
-          onClick={handleButtonClick}
-        >
-          Submit
-        </button>
+        <Button
+          title="Contact Me"
+          type="button"
+          variant="btn_dark"
+          icon="/email.svg"
+        />
       </div>
     </section>
   );
