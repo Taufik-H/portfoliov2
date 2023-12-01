@@ -12,7 +12,7 @@ const Contact = () => {
         </p>
 
         <p className="text-3xl md:w-6/12 text-center font-black text-white my-10">
-          Feel free to talk about something that you are interested with
+          Feel free to talk about something that you interested with
         </p>
 
         <Button

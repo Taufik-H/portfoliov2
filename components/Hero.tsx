@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container py-10 ">
-      <div className="flex w-full">
+    <section className="max-container padding-container  ">
+      <div className="flex w-full flexCenter flex-col lg:flex-row gap-5">
         <div className="flexCenter flex-col items-center lg:flexStart lg:items-start w-full">
           <h2 className="py-2 px-6 text-sm w-fit bg-teal-50 border-teal-500 text-teal-500 border rounded-full font-medium">
             frontend engineer
@@ -56,6 +56,15 @@ const Hero = () => {
               </Link>
             ))}
           </div>
+        </div>
+        <div className="h-full relative  lg:w-8/12  flex justify-center items-end ">
+          <Image
+            src={"/me.png"}
+            height={500}
+            width={500}
+            alt="profile"
+            className="w-full object-cover object-bottom"
+          />
         </div>
       </div>
     </section>
