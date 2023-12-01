@@ -5,7 +5,7 @@ import CardExperience from "./CardExperience";
 
 const Experiences = () => {
   return (
-    <section className="max-container padding-container pt-5 h-screen">
+    <section className="max-container padding-container py-20 ">
       <PageTitle subtitle="my work experiences" title="experiences" />
       <div className="flexCenter flex-col md:flex-row items-cente mt-10 gap-5">
         <CardExperience

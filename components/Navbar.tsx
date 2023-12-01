@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flexBetween relative z-30 py-5 max-container padding-container items-center">
+    <nav className="flexBetween  z-30 py-5 max-container padding-container items-center sticky sticky-">
       <Link className="font-black text-blue-600 text-2xl" href={"/"}>
         Portfolio
       </Link>
