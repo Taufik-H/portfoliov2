@@ -20,8 +20,8 @@ const CardProject = ({ image, title, alt, href }: CardProjectProps) => {
       />
       <p className="font-bold my-5 ">{title}</p>
       <Button
-        title="Demo Website"
         href={href}
+        title="Demo Website"
         variant={"btn_dark"}
         icon="/eye.svg"
       />

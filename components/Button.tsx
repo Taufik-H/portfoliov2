@@ -11,6 +11,7 @@ type ButtonProps = {
 const Button = ({ href, title, icon, variant, className }: ButtonProps) => {
   return (
     <a
+      target="_blank"
       href={href}
       className={`flexCenter items-center gap-3 ${className}  ${variant}`}
     >
