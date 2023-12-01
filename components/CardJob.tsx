@@ -17,7 +17,7 @@ const CardJob = ({
 }: CardTitileProps) => {
   return (
     <div
-      className={`${className} bg-white w-64 rounded-3xl shadow-2xl shadow-blue-500  p-4`}
+      className={`${className} bg-white w-64 rounded-3xl shadow-2xl shadow-slate-800  p-4`}
     >
       <p className="h-7 w-7 bg-gradient-to-tr from-blue-500 to-blue-200 rounded-full flexCenter items-center text-white font-bold">
         {CardNumber}
