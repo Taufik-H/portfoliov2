@@ -5,10 +5,11 @@ import Button from "./Button";
 type CardProjectProps = {
   image: string;
   title: string;
+  href: string;
 
   alt: string;
 };
-const CardProject = ({ image, title, alt }: CardProjectProps) => {
+const CardProject = ({ image, title, alt, href }: CardProjectProps) => {
   return (
     <div className="my-10">
       <Image
@@ -21,7 +22,7 @@ const CardProject = ({ image, title, alt }: CardProjectProps) => {
       <p className="font-bold my-5 ">{title}</p>
       <Button
         title="Demo Website"
-        type="button"
+        href={href}
         variant={"btn_dark"}
         icon="/eye.svg"
       />
