@@ -1,7 +1,5 @@
 import React from "react";
 import PageTitle from "./PageTitle";
-import Image from "next/image";
-import Button from "./Button";
 import CardProject from "./CardProject";
 
 const Projects = () => {
@@ -20,7 +18,7 @@ const Projects = () => {
         />
         <CardProject
           image="/iitc.png"
-          href="iitc.intermediaamikom.org/"
+          href="https://iitc.intermediaamikom.org/"
           title="iit competition"
           alt="iitc"
         />
