@@ -32,7 +32,7 @@ const CardJob = ({
           {jobtitle}
         </p>
         <p className="font-bold text-green-500  text-xs">
-          {totalproject} projects
+          {totalproject} years
         </p>
       </div>
     </div>

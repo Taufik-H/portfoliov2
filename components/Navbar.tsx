@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flexBetween  z-30 py-5 max-container padding-container items-center sticky sticky-">
+    <nav className="flexBetween  z-30 py-5 max-container padding-container items-center sticky">
       <Link className="font-black text-blue-600 text-2xl" href={"/"}>
         Portfolio
       </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <Button
-                  type="button"
+                  href="#contact"
                   title="Contact me"
                   icon="/call.svg"
                   variant="btn_bluePrimary"
@@ -64,7 +64,7 @@ const Navbar = () => {
       {/* "Contact me" button for desktop */}
       <div className="hidden lg:flex justify-center">
         <Button
-          type="button"
+          href="#contact"
           title="Contact me"
           icon="/call.svg"
           variant="btn_bluePrimary"

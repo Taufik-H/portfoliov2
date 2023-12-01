@@ -1,9 +1,8 @@
 export const NAV_LINKS = [
   { href: "/", label: "home", key: "home" },
-  { href: "/", label: "services", key: "services" },
-  { href: "/", label: "experiences", key: "experiences" },
-  { href: "/", label: "events recapt", key: "event_recapt" },
-  { href: "/", label: "projects", key: "projects" },
+  { href: "#services", label: "services", key: "services" },
+  { href: "#experiences", label: "experiences", key: "experiences" },
+  { href: "#projects", label: "projects", key: "projects" },
 ];
 
 export const SOCIAL_MEDIAS = [

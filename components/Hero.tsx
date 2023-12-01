@@ -27,13 +27,13 @@ const Hero = () => {
           </div>
           <div className="flexCenter gap-5 mt-5">
             <Button
-              type="button"
+              href="mailto:taufikh.dev@gmail.com"
               title="Let's Discuss"
               variant="btn_bluePrimary"
               icon="/chat.svg"
             />
             <Button
-              type="button"
+              href="https://drive.google.com/file/d/1PFCDZzv3Hb7NbjpQ92gTB5kXYogwzDlK/view?usp=sharing"
               title="Download CV"
               variant="btn_dark"
               icon="/download.svg"

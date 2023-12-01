@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Contact = () => {
   return (
-    <section className="max-container padding-container">
+    <section className="max-container padding-container" id="contact">
       <div className="bg-gradient-to-tr from-blue-700 to-blue-400 rounded-2xl w-full p-3 text-center flex py-20 flex-center items-center flex-col">
         <p className="uppercase text-white text-xs font-bold border-b border-white">
           Let's Discuss
@@ -17,7 +17,7 @@ const Contact = () => {
 
         <Button
           title="Contact Me"
-          type="button"
+          href="mailto:taufikh.dev@gmail.com"
           variant="btn_dark"
           icon="/email.svg"
         />
