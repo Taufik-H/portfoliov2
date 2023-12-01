@@ -38,3 +38,38 @@ export const SOCIAL_MEDIAS = [
     icon: "/github.svg",
   },
 ];
+
+export const Testimoni = [
+  {
+    id: 1,
+    name: "John Doe",
+    title: "UI/UX Designer",
+    image: "/user1.png",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+  },
+  {
+    id: 2,
+    name: "Jenita",
+    title: "Web Developer",
+    image: "/user2.png",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates  adipisicing elit. Quisquam, voluptates.",
+  },
+  {
+    id: 3,
+    name: "Samuel Alexandra",
+    title: "UI/UX Designer",
+    image: "/user3.png",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. adipisicing elit. Quisquam, voluptates adipisicing elit. Quisquam, voluptates",
+  },
+  {
+    id: 4,
+    name: "Alex Napoleon",
+    title: "Web Developer",
+    image: "/user4.png",
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, adipisicing elit. Quisquam, voluptates adipisicing elit. Quisquam, voluptates adipisicing elit. Quisquam, voluptates voluptates.",
+  },
+];
