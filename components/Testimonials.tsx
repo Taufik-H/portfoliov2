@@ -17,11 +17,6 @@ const Testimonials = () => {
     );
   };
 
-  const buttonVariants = {
-    hover: { scale: 1.1 },
-    tap: { scale: 0.9 },
-  };
-
   return (
     <section className="max-container padding-container my-20">
       <div className="flexCenter flex-col items-center my-10">
@@ -30,52 +25,47 @@ const Testimonials = () => {
           what people say about me?
         </h3>
       </div>
-      <AnimatePresence>
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="flexCenter flex-col items-center min-h-[300px]"
-        >
-          <p className="font-bold text-2xl text-slate-700">
-            {Testimoni[currentIndex].name}
-          </p>
-          <p className="text-sm text-blue-500">
-            {Testimoni[currentIndex].title}
-          </p>
-          <p className="text-justify md:text-center md:w-8/12 my-5 min-h-[100px]">
-            "{Testimoni[currentIndex].quote}"
-          </p>
+      <motion.div
+        key={currentIndex}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="flexCenter flex-col items-center min-h-[300px]"
+      >
+        <p className="font-bold text-2xl text-slate-700">
+          {Testimoni[currentIndex].name}
+        </p>
+        <p className="text-sm text-blue-500">{Testimoni[currentIndex].title}</p>
+        <p className="text-justify md:text-center md:w-8/12 my-5 min-h-[100px]">
+          "{Testimoni[currentIndex].quote}"
+        </p>
 
-          <Image
-            key={currentIndex}
-            src={`/user${currentIndex + 1}.png`}
-            width={70}
-            height={70}
-            alt={`testimonials${currentIndex + 1}`}
-          />
-        </motion.div>
-      </AnimatePresence>
+        <Image
+          key={currentIndex}
+          src={`/user${currentIndex + 1}.png`}
+          width={70}
+          height={70}
+          alt={`testimonials${currentIndex + 1}`}
+        />
+      </motion.div>
+
       <div className="flex justify-center items-center gap-5 mt-4">
-        <motion.button
+        <motion.div
+          whileHover={{ scale: 0.9 }}
+          whileTap={{ scale: 0.8 }}
           onClick={prevTestimonial}
-          className="text-white bg-slate-900 shadow-lg rounded-full py-2 w-28 px-5"
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
+          className="text-white cursor-default lg:cursor-pointer bg-slate-900 shadow-lg rounded-full py-2 w-28 px-5"
         >
           Previous
-        </motion.button>
-        <motion.button
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 0.9 }}
+          whileTap={{ scale: 0.8 }}
           onClick={nextTestimonial}
-          className="text-white bg-slate-900 w-28 shadow-lg rounded-full py-2 px-5"
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
+          className="text-white cursor-default lg:cursor-pointer bg-slate-900 w-28 shadow-lg rounded-full py-2 px-5 text-center"
         >
           Next
-        </motion.button>
+        </motion.div>
       </div>
     </section>
   );
